@@ -1,0 +1,17 @@
+name: My First DevOps Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome Message
+        run: echo "Hello DevOps Engineer!"
+
+      - name: Show Current Date
+        run: date
